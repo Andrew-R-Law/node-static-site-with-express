@@ -4,17 +4,16 @@ block content
 
   article.portfolio-intro
 
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
+
     h1 Andrew's Portfolio
 
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
+   
     p Here are some of the projects I have completed as I have worked through Team Treehouse's Web Development Program. Click on any of the below for more information.
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
-      //- Use the Pug `each` iterator to loop over the projects in your data file
       each project in data
         .cell 
           a(href=`/projects/${project.id}`)
