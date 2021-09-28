@@ -8,6 +8,7 @@ app.set('view engine', 'pug');
 
 app.use('/static', express.static('public'));
 
+
 //App uses routes for home page, about me, and project pages.
 app.use(routes);
 
