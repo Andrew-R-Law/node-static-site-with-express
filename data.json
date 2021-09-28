@@ -1,0 +1,65 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Employee Directory",
+            "description": "A searchable directory with the ability to display additional details for each employee.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://andrew-r-law.github.io/project-8-employee-directory/",
+            "github_link": "https://github.com/Andrew-R-Law/project-8-employee-directory",
+            "image_urls": [
+                "/static/images/employee-directory/main_page.png",
+                "/static/images/employee-directory/additional_image_1.png",
+                "/static/images/employee-directory/additional_image_2.png"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Random Quote Generator",
+            "description": "Generates a random quote every 20 seconds or when clicked.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://andrew-r-law.github.io/techdegree-random-quote-generator/",
+            "github_link": "https://github.com/Andrew-R-Law/techdegree-random-quote-generator",
+            "image_urls": [
+                "/static/images/random-quote/main_page.png",
+                "/static/images/random-quote/additional_image_1.png"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "Registration Form",
+            "description": "A registration form for a (fictional) conference. Displays content based on user selection, tracks total cost, and uses form validation.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://andrew-r-law.github.io/interactive-form/",
+            "github_link": "https://github.com/Andrew-R-Law/interactive-form",
+            "image_urls": [
+                "/static/images/registration-form/main_page.png",
+                "/static/images/registration-form/additional_image_1.png"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Responsive Form",
+            "description": "A registration form that responds to the width of the user's screen.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://andrew-r-law.github.io/techdegree-responsive-registration-form/",
+            "github_link": "https://github.com/Andrew-R-Law/techdegree-responsive-registration-form",
+            "image_urls": [
+                "/static/images/responsive-form/main_page.png",
+                "/static/images/responsive-form/additional_image_1.png"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Movie/TV Phrase Guessing Game",
+            "description": "A game that requires the user to guess the phrase from a movie or television series.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://andrew-r-law.github.io/techdegree-word-guessing-game/",
+            "github_link": "https://github.com/Andrew-R-Law/techdegree-word-guessing-game",
+            "image_urls": [
+                "/static/images/word-guessing-game/main_page.png",
+                "/static/images/word-guessing-game/additional_image_1.png"
+            ]
+        }
+    ]
+}
