@@ -1,23 +1,25 @@
 //404 Handler
 
 function fourOhFour (req, res, next) {
-    console.log('404 Error');
-
-    const err = new Error('err');
+    console.log('404 error handler called');
+    const err = new Error();
     err.status = 404;
-    err.message = 'Oops, it looks like the requested route does not exist. Try another route.';
+    err.message = 'Oops, it looks like the route requested does not exist.';
+    console.log(err.message, err.status);
     next(err);
 }
 
-//Global handler
-
+//Global Handler
 function globalError (err, req, res, next) {
-    console.log('Global error.');
-    err.message = err.message || 'Oh noes, it looks like something went wrong on the server. Try checking back soon.';
-    err.status = err.status || 500;
-    console.log(err.message);
-    console.log(err.status);
-    res.send(err.message);
+    if (err) {
+        console.log('Global error handler called', err)
+    }
+    if (!err.status || !err.message) {
+        err.status = 500;
+        err.message = 'Oh no, it looks like something has gone wrong on the server side.';
+        console.log(err.message, err.status);
+    }
+    res.status(err.status).send(err.message);
 }
 
 module.exports = {fourOhFour, globalError};
