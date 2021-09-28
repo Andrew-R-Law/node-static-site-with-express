@@ -1,25 +1,19 @@
-const express = require('express');
-const data = require('./data.json');
 
+const express = require('express');
+const routes = require('./routes');
+const errorHandlers = require('./errorHandlers');
 const app = express();
+
 app.set('view engine', 'pug');
 
 app.use('/static', express.static('public'));
 
+//App uses routes for home page, about me, and project pages.
+app.use(routes);
 
-
-app.get('/', (req, res) => {
-    res.render('index', {data: data.projects});
-});
-
-app.get('/about', (req, res) => {
-    res.render('about');
-});
-
-app.get('/projects/:id', (req, res) => {
-    const id = req.params.id;
-    res.render('project', {data: data.projects[id]});
-});
+//App calls error handler functions.
+app.use(errorHandlers.fourOhFour);
+app.use(errorHandlers.globalError);
 
 
 app.listen(3000, () => {
